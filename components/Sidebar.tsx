@@ -1,7 +1,7 @@
 import React from 'react';
 import { ICONS } from '../constants';
 
-type View = 'overview' | 'conversations' | 'meetings';
+type View = 'overview' | 'conversations' | 'meetings' | 'analytics' | 'analysis_details';
 
 interface SidebarProps {
   isSidebarOpen: boolean;
@@ -57,7 +57,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar, activeV
               <NavLink icon={ICONS.meetings} text="Meetings" active={activeView === 'meetings'} onClick={() => navigate('meetings')} />
               <NavLink icon={ICONS.reminders} text="Reminders" disabled={true} />
               <NavLink icon={ICONS.enquiries} text="Enquiries" disabled={true} />
-              <NavLink icon={ICONS.analytics} text="Analytics" disabled={true} />
+              <NavLink icon={ICONS.analytics} text="Analytics" active={activeView === 'analytics'} onClick={() => navigate('analytics')} />
+              <NavLink icon={ICONS.analysis_details} text="Analysis Details" active={activeView === 'analysis_details'} onClick={() => navigate('analysis_details')} />
             </NavSection>
 
             <NavSection title="Settings">

@@ -3,8 +3,10 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Conversations from './components/Conversations';
 import Meetings from './components/Meetings';
+import Analytics from './components/Analytics';
+import SemanticAnalysisTable from './components/SemanticAnalysisTable';
 
-type View = 'overview' | 'conversations' | 'meetings';
+type View = 'overview' | 'conversations' | 'meetings' | 'analytics' | 'analysis_details';
 
 const App: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -46,6 +48,8 @@ const App: React.FC = () => {
         {activeView === 'overview' && <Dashboard />}
         {activeView === 'conversations' && <Conversations />}
         {activeView === 'meetings' && <Meetings />}
+        {activeView === 'analytics' && <Analytics />}
+        {activeView === 'analysis_details' && <SemanticAnalysisTable />}
       </div>
     </div>
   );
