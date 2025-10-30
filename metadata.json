@@ -1,0 +1,5 @@
+{
+  "name": "AI Voice Agent Dashboard",
+  "description": "A dashboard to manage calls and conversations for an AI Voice Agent. It provides an overview of call statistics, recent interactions, and system status.",
+  "requestFramePermissions": []
+}
