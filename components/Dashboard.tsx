@@ -244,7 +244,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2 bg-slate-800 p-6 rounded-xl shadow-lg">
+          <div className="lg:col-span-3 bg-slate-800 p-6 rounded-xl shadow-lg">
             <h3 className="text-lg font-semibold text-white">Recent Calls</h3>
             <p className="text-sm text-slate-400 mb-4">Latest voice agent interactions from the selected period</p>
             {loading ? (
@@ -269,13 +269,6 @@ const Dashboard: React.FC = () => {
                 ))}
               </div>
             )}
-          </div>
-
-          <div className="space-y-8">
-            <div className="bg-yellow-500/10 border-l-4 border-yellow-400 text-yellow-300 p-4 rounded-r-lg" role="alert">
-              <p className="font-bold">Reminder</p>
-              <p className="text-sm">3 pending acknowledgments require review.</p>
-            </div>
           </div>
         </div>
       </main>
