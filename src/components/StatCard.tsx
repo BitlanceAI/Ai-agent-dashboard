@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { StatCardData } from '../types';
+import { StatCardData } from '../../types';
 
 interface StatCardProps {
   data: StatCardData;

@@ -3,7 +3,7 @@ import StatCard from './StatCard';
 import RecentCallItem from './RecentCallItem';
 import { CalendarIcon, ChartBarIcon, ClockIcon, CheckCircleIcon } from '../constants';
 import { supabase } from '../lib/supabase';
-import { RecentCall, CallStatus } from '../types';
+import { RecentCall, CallStatus } from '../../types';
 import StartCallModal from './StartCallModal';
 
 // Helper functions

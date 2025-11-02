@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ClipboardIcon } from '../constants';
-import { WebCallResponse } from '../types';
+import { WebCallResponse } from '../../types';
 
 interface WebCallModalProps {
   onClose: () => void;

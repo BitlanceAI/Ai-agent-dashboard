@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { WebCallResponse, TranscriptEntry } from '../types';
+import { WebCallResponse, TranscriptEntry } from '../../types';
 import { MicrophoneIcon, PhoneXMarkIcon } from '../constants';
 
 // Since the SDK is loaded from a CDN, we access it via the window object.

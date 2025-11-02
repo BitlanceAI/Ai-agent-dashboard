@@ -1,5 +1,5 @@
 import React from 'react';
-import { RecentCall, CallStatus } from '../types';
+import { RecentCall, CallStatus } from '../../types';
 
 interface RecentCallItemProps {
   call: RecentCall;

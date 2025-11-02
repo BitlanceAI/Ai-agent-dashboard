@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
-import { Database, Json } from '../types';
+import { Database, Json } from '../../types';
 
 type AnalysisRow = Database['public']['Tables']['semantic_analysis']['Row'];
 

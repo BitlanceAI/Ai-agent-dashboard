@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
-import { Conversation } from '../types';
+import { Conversation } from '../../types';
 
 const formatDuration = (seconds: number | null): string => {
     if (seconds === null || typeof seconds === 'undefined') return 'N/A';

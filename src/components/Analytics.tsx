@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { supabase } from '../lib/supabase';
-import { Database, Json } from '../types';
+import { Database, Json } from '../../types';
 
 type Analysis = Database['public']['Tables']['semantic_analysis']['Row'];
 type DateRange = 'all' | '7d' | '30d' | '90d';
